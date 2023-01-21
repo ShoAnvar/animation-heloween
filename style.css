@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.spider{
+    position: absolute;
+    top: 0;
+    animation: animateSpider 15s ease-in-out infinite;
+}
+
+@keyframes animateSpider{
+    0%,100%
+    {
+        transform: translateY(-500px);
+    }
+    
+    50%
+    {
+        transform: translateY(0px);
+    }
+}
+
+.pumpkin01{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    animation: anipump 8s ease-in-out infinite;
+}
+
+@keyframes anipump{
+    0%,100%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+}
+
+.pumpkin02{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    animation: anipump 8s ease-in-out infinite;
+}
+
